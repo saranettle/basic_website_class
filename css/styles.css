@@ -1,0 +1,48 @@
+/* The body selector can be used to change the background of the entire
+webpage. All elements are nested within the body element.
+If you want all of the text to have the same property, you can also set that
+here. */
+body {
+  /* Note that to reference an image in the images folder, you
+  must type ../images/ to navigate there, rather than just images/ */
+  background-image: url("../images/grid_bg.gif");
+  background-color: black;
+}
+
+/* This selector will modify both the header and main block */
+.block {
+  background-color: #a4b0f5;
+  margin-left: 375px;
+  margin-right: 375px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  padding: 15px;
+
+  /* This property will round out the corners of the divs */
+  border-radius: 30px;
+}
+
+#header {
+  background-image: url("../images/water_bg.gif");
+  /* Text-align centers all "inline" elements, which includes text and images */
+  text-align: center;
+  font-size: 25px;
+}
+
+#main {
+  color: #7d4600;
+  border: 3px dashed #7d4600;
+}
+
+/* This selects only the img inside the #main div. If you add other images to
+ this div, these styles will apply. */
+#main img {
+  /* the three lines below center the image without centering anything else */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Below you can add more selectors with property modifications. Experiment
+and have fun!!!! */
